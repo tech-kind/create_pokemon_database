@@ -15,11 +15,8 @@ namespace CreatePokemonDatabase
 
         public PokemonContext()
         {
-            // 特殊フォルダ（デスクトップ）の絶対パスを取得
-            var path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
-
             // DBファイルの保存先とDBファイル名
-            DbPath = $"{path}{Path.DirectorySeparatorChar}pokemon.db";
+            DbPath = @"C:\projects\example\create_pokemon_database\CreatePokemonDatabase\bin\Debug\net6.0\pokemon.db";
         }
 
         // デスクトップ上にSQLiteのDBファイルが作成される
